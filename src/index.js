@@ -6,6 +6,7 @@ const display = document.getElementById('display');
 let currentInput = '0';
 let previousInput = null;
 let operator = null;
+let isNewInput = false;
 
 /**
  * Updates the displayed values on the virtual calculator screen
@@ -47,10 +48,15 @@ function setupButtons() {
  * Handles case where user clicked a digit
  */
 function appendDigit(value) {
-  if (currentInput === '0' && value !== '.') {
-    currentInput = value;
+  if (isNewInput) {
+    currentInput = value; 
+    isNewInput = false;  
   } else {
-    currentInput += value;
+    if (currentInput === '0' && value !== '.') {
+      currentInput = value; 
+    } else {
+      currentInput += value; 
+    }
   }
 }
 
@@ -73,6 +79,7 @@ function calculateClicked() {
     }
     previousInput = null;
     operator = null;
+    isNewInput = true; 
   }
 }
 
@@ -90,7 +97,7 @@ function simpleOperatorClicked(value) {
 
   operator = value;
   previousInput = currentInput;
-  currentInput = '0';
+  isNewInput = true; 
 }
 
 /**
