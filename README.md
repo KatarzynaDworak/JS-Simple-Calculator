@@ -28,7 +28,7 @@ The goal was to create a JavaScript application with the following constraints a
 
 ### Install Dependencies
 Clone the repository:
-   ```bash
+
    git clone https://github.com/KatarzynaDworak/JS-Simple-Calculator.git
 
 ### Navigate to the project folder:
