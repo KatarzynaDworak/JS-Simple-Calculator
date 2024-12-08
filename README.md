@@ -47,11 +47,11 @@ Run the app locally in development mode with live reloading:
 This will open the app in your default browser and reload the app whenever changes are made.
 
 ### Build for Production
-- To build the app for production, run:
+To build the app for production, run:
 
       npm run build
 
-- The build output will be located in the dist/ folder and will include the following:
+The build output will be located in the dist/ folder and will include the following:
 
       index.html
       bundle.js
