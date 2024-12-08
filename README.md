@@ -57,7 +57,7 @@ This will open the app in your default browser and reload the app whenever chang
       bundle.js
 
 ### Deploy the App
-The app has been deployed using GitHub Pages. You can view the live application here: JS Simple Calculator Live
+The app has been deployed using GitHub Pages. You can view the live application here: [JS Simple Calculator Live](https://katarzynadworak.github.io/JS-Simple-Calculator/)
 
       Folder Structure
       The project is structured as follows:
