@@ -109,7 +109,7 @@ Tests are located in the src/__tests__/ folder.
 
 To run the tests, execute:
 
-          npm test
+      npm test
 
 
 ### Remarks
