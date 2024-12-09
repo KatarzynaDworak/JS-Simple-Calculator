@@ -102,8 +102,15 @@ The app has been deployed using GitHub Pages. You can view the live application 
 - A pre-commit hook prevents invalid or poorly formatted code from being pushed.
 
 **Testing:**
-Added Jest unit tests to ensure the correctness of the calculator's functionality.
-Example: Tests for basic arithmetic operations like addition and division.
+- This project uses Jest for unit testing to ensure the correctness of the calculator's core functionality. Tests focus on the business logic defined in math.js.
+- Example tests include verifying basic arithmetic operations such as addition and division, as well as handling edge cases like division by zero.
+
+Tests are located in the src/__tests__/ folder.
+
+To run the tests, execute:
+
+          npm test
+
 
 ### Remarks
 This project follows the standard practices for setting up a JavaScript application without any framework. It utilizes Webpack for bundling, ESLint for code linting, Prettier for formatting, and GitHub Pages for deployment.
