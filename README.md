@@ -74,12 +74,17 @@ The app has been deployed using GitHub Pages. You can view the live application 
           │   ├── math.js           # Business logic for calculations
           │   ├── theme.js          # Theme toggling logic
           │   ├── style.css         # Application styling
+          │   ├── __tests__/        # Jest test files
+          │       ├── math.test.js  # Unit tests for math.js
           │
-          ├── .eslintrc.json        # ESLint configuration
+          ├── .babelrc              # Babel configuration
+          ├── jest.config.js        # Jest configuration
+          ├── eslint.config.mjs     # ESLint configuration
           ├── .prettierrc           # Prettier configuration
           ├── .gitignore            # Ignored files for git
           ├── package.json          # Node.js project configuration
           ├── webpack.config.js     # Webpack configuration
+
 
 ### Features
 **Core Functionalities:**
