@@ -17,16 +17,16 @@
  * calculate(10, 0, "/");  // Returns null
  */
 export function calculate(number1, number2, operator) {
-    switch (operator) {
-      case '+':
-        return number1 + number2;
-      case '-':
-        return number1 - number2;
-      case '*':
-        return number1 * number2;
-      case '/':
-        return number2 !== 0 ? number1 / number2 : null;
-      default:
-        return number2;
-    }
+  switch (operator) {
+    case '+':
+      return number1 + number2;
+    case '-':
+      return number1 - number2;
+    case '*':
+      return number1 * number2;
+    case '/':
+      return number2 !== 0 ? number1 / number2 : null;
+    default:
+      return number2;
   }
+}

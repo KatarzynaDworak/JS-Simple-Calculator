@@ -49,13 +49,13 @@ function setupButtons() {
  */
 function appendDigit(value) {
   if (isNewInput) {
-    currentInput = value; 
-    isNewInput = false;  
+    currentInput = value;
+    isNewInput = false;
   } else {
     if (currentInput === '0' && value !== '.') {
-      currentInput = value; 
+      currentInput = value;
     } else {
-      currentInput += value; 
+      currentInput += value;
     }
   }
 }
@@ -79,7 +79,7 @@ function calculateClicked() {
     }
     previousInput = null;
     operator = null;
-    isNewInput = true; 
+    isNewInput = true;
   }
 }
 
@@ -97,7 +97,7 @@ function simpleOperatorClicked(value) {
 
   operator = value;
   previousInput = currentInput;
-  isNewInput = true; 
+  isNewInput = true;
 }
 
 /**
