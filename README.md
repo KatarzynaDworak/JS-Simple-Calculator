@@ -96,6 +96,10 @@ The app has been deployed using GitHub Pages. You can view the live application 
 - ESLint and Prettier ensure clean and consistent code.
 - A pre-commit hook prevents invalid or poorly formatted code from being pushed.
 
+**Testing:**
+Added Jest unit tests to ensure the correctness of the calculator's functionality.
+Example: Tests for basic arithmetic operations like addition and division.
+
 ### Remarks
 This project follows the standard practices for setting up a JavaScript application without any framework. It utilizes Webpack for bundling, ESLint for code linting, Prettier for formatting, and GitHub Pages for deployment.
 
