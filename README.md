@@ -74,12 +74,17 @@ The app has been deployed using GitHub Pages. You can view the live application 
           │   ├── math.js           # Business logic for calculations
           │   ├── theme.js          # Theme toggling logic
           │   ├── style.css         # Application styling
+          │   ├── __tests__/        # Jest test files
+          │       ├── math.test.js  # Unit tests for math.js
           │
-          ├── .eslintrc.json        # ESLint configuration
+          ├── .babelrc              # Babel configuration
+          ├── jest.config.js        # Jest configuration
+          ├── eslint.config.mjs     # ESLint configuration
           ├── .prettierrc           # Prettier configuration
           ├── .gitignore            # Ignored files for git
           ├── package.json          # Node.js project configuration
           ├── webpack.config.js     # Webpack configuration
+
 
 ### Features
 **Core Functionalities:**
@@ -95,6 +100,17 @@ The app has been deployed using GitHub Pages. You can view the live application 
 **Code Quality:**
 - ESLint and Prettier ensure clean and consistent code.
 - A pre-commit hook prevents invalid or poorly formatted code from being pushed.
+
+**Testing:**
+- This project uses Jest for unit testing to ensure the correctness of the calculator's core functionality. Tests focus on the business logic defined in math.js.
+- Example tests include verifying basic arithmetic operations such as addition and division, as well as handling edge cases like division by zero.
+
+Tests are located in the src/__tests__/ folder.
+
+To run the tests, execute:
+
+      npm test
+
 
 ### Remarks
 This project follows the standard practices for setting up a JavaScript application without any framework. It utilizes Webpack for bundling, ESLint for code linting, Prettier for formatting, and GitHub Pages for deployment.
